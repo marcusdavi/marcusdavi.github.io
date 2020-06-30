@@ -121,16 +121,7 @@ gap: 20px;
 }
 
 .project-abstract,
-.project-stack{
+.project-stack,
+.project-date{
     padding: 16px;
-}
-
-.project-stack {
-    text-align: left;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
-
-.project-date {
-    text-align: right;
 }
