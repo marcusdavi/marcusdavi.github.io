@@ -4,7 +4,7 @@
     --color-link: rgb(214, 236, 88);
     --color-link-selected: white;
     --transition-color-time: color 300ms;
-    --color-caption: #819242;
+    --color-caption: #8f871a;
 }
 * {
     margin: 0;
@@ -74,8 +74,8 @@ h1{
  #abstract p{
   max-width: 700px;   
   margin: 22px auto;
-  font-size: 16px;
-  line-height: 26px;
+  font-size: 14px;
+  line-height: 24px;
   font-weight: normal;
  }
 
@@ -111,17 +111,32 @@ gap: 20px;
 
 .project{
     background-color: var(--color-caption);
-    border-radius: 10%;
+    border-radius: 10% 20% 10% 10%;
+    display: grid;
+    position: relative;
+    padding: 8px;
 }
 
 .project a img{
     width: 100%;
-    height: 300px;
-    border-radius: 10%;
+    height: 250px;
+    border-radius: 10% 20% 10% 10%;
 }
 
 .project-abstract,
-.project-stack,
-.project-date{
+.project-stack {
+    display: grid;
     padding: 8px;
+    font-size: 12px;
+    line-height: 22px;
+    align-items: center;
+}
+
+.project-stack {
+    grid-template-columns: 1fr 1fr;
+    text-align: left;
+}
+
+.project-date {
+    text-align: right;
 }
