@@ -1,11 +1,12 @@
-@import "https://fonts.googleapis.com/css2?family=Source+Sans+Pro:400, 700&display=swap";
+@import "https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap";
 
 :root {
     --color-link: rgb(214, 236, 88);
     --color-link-selected: white;
-    --transition-color-time: color 300ms;
+    --transition-time: 1s all;
     --color-caption: #8f871a;
 }
+
 * {
     margin: 0;
     padding: 0;
@@ -28,6 +29,8 @@ body {
     line-height: 28px;
     margin: 0 16px;
     text-decoration: none;
+    transition: var(--transition-time);
+    border-bottom: 1px solid var(--color-link-selected);    
 }
 
 .background-link-bar {
@@ -37,8 +40,8 @@ body {
 }
 
 .links a:hover {
-    color: var(--color-link-selected);
-    transition: var(--transition-color-time);
+    color: white;
+
 }
 
 #abstract, #portfolio {
@@ -51,11 +54,19 @@ body {
 }
 
 #abstract img{
-   border-radius: 25% 0%;
-   border: 5px solid var(--color-link);
-   margin-bottom: 32px;
-   height: 200px;
+    margin-top: 30px;
+    border-radius: 25% 0%;
+    border: 5px solid var(--color-link);
+    margin-bottom: 32px;
+    height: 150px;
+    transition: var(--transition-time);
 }
+
+#abstract img:hover{
+    border-radius: 0%;
+    transform: scale(1.5) rotate3d(1, 1, 1, 720deg);
+    border: 5px solid var(--color-link-selected);
+ }
 
 h1{
     font-size: 42px;
@@ -82,31 +93,27 @@ h1{
  #abstract a{
     color: var(--color-link);
     text-decoration: none;
-    border-bottom: 2px solid var(--color-link-selected);
+    border-bottom: 1px solid var(--color-link-selected);
+    transition: var(--transition-time);
+    text-decoration: none;
    }
 
 #abstract a:hover{
     color: var(--color-link-selected);
-    text-decoration: none;
-    transition: var(--transition-color-time);
    }
    
 section {
 	padding: 32px;
 }
 
-#links-footer a { 
-border-bottom: 1px solid var(--color-link-selected);
-}
-
 /*==== Portfolio ====*/
 
 .projects {
-max-width: 960px;
-margin: 0 auto;
-display: grid;
-grid-template-columns: 1fr 1fr;
-gap: 20px;
+    max-width: 960px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
 }
 
 .project{
@@ -121,6 +128,13 @@ gap: 20px;
     width: 100%;
     height: 250px;
     border-radius: 10% 20% 10% 10%;
+    transition: var(--transition-time);
+}
+
+.project a img:hover{
+    transform: scale(0.8);
+    border-radius: 0%;
+    opacity: 0.8;
 }
 
 .project-abstract,
