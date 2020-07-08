@@ -132,7 +132,7 @@ section {
 
 .project a img{
     width: 100%;
-    height: 250px;
+    height: 220px;
     border-radius: 10% 20% 10% 10%;
     transition: var(--transition-time);
 }
