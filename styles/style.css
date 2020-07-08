@@ -1,10 +1,10 @@
 @import "https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap";
 
 :root {
-    --color-link: rgb(214, 236, 88);
+    --color-link: rgb(88, 164, 236);
     --color-link-selected: white;
     --transition-time: 1s all;
-    --color-caption: #8f871a;
+    --color-caption: #1a5a8f;
 }
 
 * {
@@ -13,7 +13,7 @@
     border: 0
 }
 body {
-    background-color: #1c1c1d;
+    background: linear-gradient(#1d1d3b, #282860);
     font-family: 'Source Sans Pro', sans-serif;
     color: rgb(216, 242, 247);
 
@@ -41,6 +41,7 @@ body {
 
 .links a:hover {
     color: white;
+    font-size: 20px;
 
 }
 
@@ -64,7 +65,7 @@ body {
 
 #abstract img:hover{
     border-radius: 0%;
-    transform: scale(1.5) rotate3d(1, 1, 1, 720deg);
+    transform: scale(1.5) rotate3d(1, 1, 1, 360deg);
     border: 5px solid var(--color-link-selected);
  }
 
@@ -89,6 +90,11 @@ h1{
   line-height: 24px;
   font-weight: normal;
  }
+
+ #abstract p:before{
+    content: "★";
+   }
+ 
 
  #abstract a{
     color: var(--color-link);
