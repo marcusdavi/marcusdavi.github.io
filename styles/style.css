@@ -115,7 +115,7 @@ section {
 /*==== Portfolio ====*/
 
 .projects {
-    max-width: 960px;
+    max-width: 800px;
     margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -131,7 +131,7 @@ section {
 }
 
 .project a img{
-    width: 100%;
+    
     height: 220px;
     border-radius: 10% 20% 10% 10%;
     transition: var(--transition-time);
@@ -153,10 +153,24 @@ section {
 }
 
 .project-stack {
-    grid-template-columns: 1fr 1fr;
-    text-align: left;
+    text-align: center;
 }
+
+.project-stack p:first-child::before {
+    content:"🔋 ";
+}
+
+
 
 .project-date {
     text-align: right;
+    position: absolute;
+    text-align: right;
+    padding: 2px 8px;
+    right: -6px;
+    top: 4px; 
+    background: yellow;
+    color: black;
+    border-radius: 16px;
+    border: 1px solid black;
 }
