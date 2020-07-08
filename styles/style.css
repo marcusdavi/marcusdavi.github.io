@@ -160,12 +160,9 @@ section {
     content:"🔋 ";
 }
 
-
-
 .project-date {
     text-align: right;
     position: absolute;
-    text-align: right;
     padding: 2px 8px;
     right: -6px;
     top: 4px; 
